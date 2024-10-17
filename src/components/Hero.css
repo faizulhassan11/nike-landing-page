@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 72px);
+  padding: 0 20px;
+  margin-top: 70px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 600px;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-btn .category-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 400px;
+  font-weight: 600;
+  color: var(--gray);
+  text-align: justify;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.shopping .brand-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+}

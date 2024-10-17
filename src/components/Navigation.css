@@ -1,0 +1,77 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 72px;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+nav button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav .menu-toggle {
+  display: none;
+}
+
+nav .login-btn {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav .menu-toggle {
+    display: block;
+    margin-right: 20px;
+  }
+
+  nav .login-btn {
+    display: none;
+  }
+}
